@@ -1,8 +1,8 @@
-# _PROJECT NAME_
+# _ARR PEE GEE_
 
-#### _SHORT DESCR_
+#### _RPG (roleplaying game) for FRIENDLY FUN with your FRIENDLY FRIENDS_
 
-#### By _**YOUR NAME HERE**_
+#### By _**Allison Sadin & Christine Augustine & Kelly Eidsvik**_
 
 ## Description
 
@@ -36,4 +36,4 @@ _Technology!_
 
 *GPL license distribution*
 
-Copyright (c) 2020 **_Your name(s)_**
+Copyright (c) 2020 **_Allison Sadin & Christine Augustine & Kelly Eidsvik_**
