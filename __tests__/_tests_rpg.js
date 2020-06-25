@@ -16,5 +16,10 @@ describe('CharacterType class', () => {
     dog.healthy();
     expect(dog.health).toEqual(60);
   })
-
+  
+  test("should lower health by five for every hit", () => {
+    const dog = new CharacterType("Dog", 0, 45, 5);
+    dog.damage();
+    expect(dog.health).toEqual(45);
+  });
 });
