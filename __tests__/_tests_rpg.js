@@ -1,6 +1,6 @@
 import { CharacterType } from '../src/rpg.js';
 
-describe('CharacterType', () => {
+describe('CharacterType class', () => {
 
   test('should create new character object with all properties', () => {
     const dog = new CharacterType("Dog", 0, 50, 5);
@@ -10,5 +10,11 @@ describe('CharacterType', () => {
     expect(dog.strength).toBe(5)
 
   });
+
+  test('should increase health by 10 if character drinks potion', () => {
+    const dog = new CharacterType("Dog", 0, 50, 5);
+    dog.healthy();
+    expect(dog.health).toEqual(60);
+  })
 
 });
