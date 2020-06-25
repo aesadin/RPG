@@ -1,14 +1,14 @@
-import { Dog } from '../src/rpg.js';
+import { CharacterType } from '../src/rpg.js';
 
-describe('Dog', () => {
+describe('CharacterType', () => {
 
-  test('should create new dog player with 5 properties', () => {
-    const dog = new Dog("Tookie", "100hp", "1", "Barbarian", ["Terrier"]);
-    expect(dog.name).toBe("Tookie");
-    expect(dog.health).toBe("100hp");
-    expect(dog.level).toBe("1");
-    expect(dog.charClass).toBe("Barbarian");
-    expect(dog.breed[0]).toBe("Terrier");
+  test('should create new character object with all properties', () => {
+    const dog = new CharacterType("Dog", 0, 50, 5);
+    expect(dog.playerType).toBe("Dog");
+    expect(dog.level).toBe(0);
+    expect(dog.health).toBe(50);
+    expect(dog.strength).toBe(5)
+
   });
-});
 
+});
