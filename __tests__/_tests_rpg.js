@@ -18,8 +18,14 @@ describe('CharacterType class', () => {
   })
   
   test("should lower health by five for every hit", () => {
-    const dog = new CharacterType("Dog", 0, 45, 5);
+    const dog = new CharacterType("Dog", 0, 50, 5);
     dog.damage();
     expect(dog.health).toEqual(45);
+  });
+
+  test("determine loser", () => {
+    const dog = new CharacterType("Dog", 0, 50, 5);
+    dog.loser();
+    expect(dog.health).toEqual(0);
   });
 });
